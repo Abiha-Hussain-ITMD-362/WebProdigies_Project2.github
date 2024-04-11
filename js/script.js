@@ -17,6 +17,12 @@ function initMap(){
     {infowindow.open({anchor: 
       marker, map, });
       });
+  
+  const marker = new google.maps.Marker({
+    position: myLatLng,
+    map,
+    title: "IIT",
+  }); 
 }
 window.addEventListener('load', init);
 window.initMap = initMap;
