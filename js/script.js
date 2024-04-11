@@ -8,21 +8,20 @@ function init(){
     alert(text);
   }
 }
-
 function initMap(){
   const myLatLng = {lat: 41.257210, lng: -95.965462};
   const map = new google.maps.Map(document.getElementById("map"), {zoom: 15, center: myLatLng,});
- 
-  marker.addListener("click", () =>
-    {infowindow.open({anchor: 
-      marker, map, });
-      });
   
   const marker = new google.maps.Marker({
     position: myLatLng,
     map,
     title: "IIT",
   }); 
+  
+  marker.addListener("click", () =>
+    {infowindow.open({anchor: 
+      marker, map, });
+      });
 }
 window.addEventListener('load', init);
 window.initMap = initMap;
