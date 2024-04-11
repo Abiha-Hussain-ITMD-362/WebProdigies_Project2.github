@@ -296,6 +296,11 @@ label {
  #home-panels hr {
      border: 2px solid black;
 }
+#map {
+        height: 200px;
+        width: 100%;
+        background-color: white;
+}
 @media (min-width: 650px) {
       #home-panels a {
          flex-basis: calc(50% - 15px);
@@ -307,10 +312,16 @@ label {
          margin-top: 30px;
          margin-bottom: 30px;
     }
+     #map {
+        height: 400px;
+    }
 }
  @media (min-width: 900px) {
      #column {
          column-count: 3;
+    }
+     #map {
+        height: 600px;
     }
      #footer{
          min-height: 300px;
@@ -333,6 +344,9 @@ label {
          margin-left: 30%;
          margin-right: 30%;
     }
+      #map {
+        height: 750px;
+     }
      #sideMargin {
          margin-left: 10%;
          margin-right: 10%;
