@@ -7,7 +7,7 @@ function init(){
     if (input.value.length == 0) {
       text = ('Please Enter Your Contact Info!');
       alert(text);
-    } else if(){
+    } else if(input.value.length > 0){
       text = ('Thank you ' + input.value + ', you should receive a text message soon!');
       alert(text);
     }
